@@ -25,8 +25,8 @@ use Carp 'croak';
 use Encode qw(decode find_encoding);
 use Exporter 5.57 'import';
 
-our $VERSION = '0.01';
-# This file is part of IO-HTML 0.01 (January 28, 2012)
+our $VERSION = '0.02';
+# This file is part of IO-HTML 0.02 (January 29, 2012)
 
 our $default_encoding ||= 'cp1252';
 
@@ -264,8 +264,8 @@ IO::HTML - Open an HTML file with automatic charset detection
 
 =head1 VERSION
 
-This document describes version 0.01 of
-IO::HTML, released January 28, 2012.
+This document describes version 0.02 of
+IO::HTML, released January 29, 2012.
 
 =head1 SYNOPSIS
 
@@ -405,7 +405,7 @@ loaded into a string, open an in-memory file on the string, and pass
 that handle:
 
   ($encoding, $bom) = do {
-    open(my $fh, '<:raw', \$string);  sniff_encoding($fh)
+    open(my $fh, '<', \$string);  sniff_encoding($fh)
   };
 
 (This only makes sense if C<utf8::is_utf8($string)> is false.)

@@ -1,4 +1,4 @@
-IO-HTML version 0.01, released January 28, 2012
+IO-HTML version 0.02, released January 29, 2012
 
 
 This module opens a file and performs automatic charset detection
@@ -30,10 +30,11 @@ DEPENDENCIES
 
 
 CHANGES
-    Here's what's new in version 0.01 of IO-HTML:
+    Here's what's new in version 0.02 of IO-HTML:
     (See the file "Changes" for the full revision history.)
 
-	- Initial release
+	- Fix 20-open.t to work on OpenBSD & Solaris
+	  (It seems they don't like <:raw on in-memory files.)
 
 
 
