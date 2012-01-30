@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "Encode" => 0,
     "Exporter" => "5.57"
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }

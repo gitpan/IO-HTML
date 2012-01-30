@@ -25,8 +25,8 @@ use Carp 'croak';
 use Encode qw(decode find_encoding);
 use Exporter 5.57 'import';
 
-our $VERSION = '0.02';
-# This file is part of IO-HTML 0.02 (January 29, 2012)
+our $VERSION = '0.03';
+# This file is part of IO-HTML 0.03 (January 30, 2012)
 
 our $default_encoding ||= 'cp1252';
 
@@ -264,8 +264,8 @@ IO::HTML - Open an HTML file with automatic charset detection
 
 =head1 VERSION
 
-This document describes version 0.02 of
-IO::HTML, released January 29, 2012.
+This document describes version 0.03 of
+IO::HTML, released January 30, 2012.
 
 =head1 SYNOPSIS
 

@@ -1,4 +1,4 @@
-IO-HTML version 0.02, released January 29, 2012
+IO-HTML version 0.03, released January 30, 2012
 
 
 This module opens a file and performs automatic charset detection
@@ -30,11 +30,11 @@ DEPENDENCIES
 
 
 CHANGES
-    Here's what's new in version 0.02 of IO-HTML:
+    Here's what's new in version 0.03 of IO-HTML:
     (See the file "Changes" for the full revision history.)
 
-	- Fix 20-open.t to work on OpenBSD & Solaris
-	  (It seems they don't like <:raw on in-memory files.)
+	- Fix 10-find.t to work on Perl 5.8.8
+	  (mime_name wasn't introduced until Encode 2.21; 5.8.8 has 2.12.)
 
 
 
