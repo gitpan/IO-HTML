@@ -22,7 +22,7 @@
       "runtime" : {
          "requires" : {
             "Carp" : 0,
-            "Encode" : 0,
+            "Encode" : "2.10",
             "Exporter" : "5.57",
             "perl" : "5.008"
          }
@@ -43,7 +43,7 @@
          "web" : "http://github.com/madsen/io-html"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

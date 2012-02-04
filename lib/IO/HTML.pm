@@ -22,11 +22,11 @@ use strict;
 use warnings;
 
 use Carp 'croak';
-use Encode qw(decode find_encoding);
+use Encode 2.10 qw(decode find_encoding); # need utf-8-strict encoding
 use Exporter 5.57 'import';
 
-our $VERSION = '0.03';
-# This file is part of IO-HTML 0.03 (January 30, 2012)
+our $VERSION = '0.04';
+# This file is part of IO-HTML 0.04 (February 4, 2012)
 
 our $default_encoding ||= 'cp1252';
 
@@ -264,8 +264,8 @@ IO::HTML - Open an HTML file with automatic charset detection
 
 =head1 VERSION
 
-This document describes version 0.03 of
-IO::HTML, released January 30, 2012.
+This document describes version 0.04 of
+IO::HTML, released February 4, 2012.
 
 =head1 SYNOPSIS
 
@@ -509,6 +509,14 @@ you set C<$IO::HTML::default_encoding> to C<undef>.
 =head1 CONFIGURATION AND ENVIRONMENT
 
 IO::HTML requires no configuration files or environment variables.
+
+=head1 DEPENDENCIES
+
+IO::HTML has no non-core dependencies for Perl 5.8.7+.  With earlier
+versions of Perl 5.8, you need to upgrade L<Encode> to at least
+version 2.10, and
+you may need to upgrade L<Exporter> to at least version
+5.57.
 
 =head1 INCOMPATIBILITIES
 

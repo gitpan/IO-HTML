@@ -25,10 +25,10 @@ my %WriteMakefileArgs = (
   "NAME" => "IO::HTML",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "Encode" => 0,
+    "Encode" => "2.10",
     "Exporter" => "5.57"
   },
-  "VERSION" => "0.03",
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }
