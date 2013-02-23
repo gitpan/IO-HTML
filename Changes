@@ -1,5 +1,9 @@
 Revision history for IO-HTML
 
+1.00   February 23, 2013
+	- No code changes, just documentation improvements
+	- Document filehandle position set by sniff_encoding
+
 0.04   February 4, 2012
 	- Require Encode 2.10 to get the utf-8-strict encoding.
 	  This is only an issue with Perl 5.8.6 and earlier.

@@ -1,4 +1,4 @@
-IO-HTML version 0.04, released February 4, 2012
+IO-HTML version 1.00, released February 23, 2013
 
 
 This module opens a file and performs automatic charset detection
@@ -22,7 +22,7 @@ DEPENDENCIES
 
   Package   Minimum Version
   --------- ---------------
-  perl       5.008
+  perl       5.8.0
   Carp       
   Encode     2.10
   Exporter   5.57
@@ -30,17 +30,17 @@ DEPENDENCIES
 
 
 CHANGES
-    Here's what's new in version 0.04 of IO-HTML:
+    Here's what's new in version 1.00 of IO-HTML:
     (See the file "Changes" for the full revision history.)
 
-	- Require Encode 2.10 to get the utf-8-strict encoding.
-	  This is only an issue with Perl 5.8.6 and earlier.
+	- No code changes, just documentation improvements
+	- Document filehandle position set by sniff_encoding
 
 
 
 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2013 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

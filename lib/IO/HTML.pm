@@ -25,8 +25,8 @@ use Carp 'croak';
 use Encode 2.10 qw(decode find_encoding); # need utf-8-strict encoding
 use Exporter 5.57 'import';
 
-our $VERSION = '0.04';
-# This file is part of IO-HTML 0.04 (February 4, 2012)
+our $VERSION = '1.00';
+# This file is part of IO-HTML 1.00 (February 23, 2013)
 
 our $default_encoding ||= 'cp1252';
 
@@ -264,8 +264,8 @@ IO::HTML - Open an HTML file with automatic charset detection
 
 =head1 VERSION
 
-This document describes version 0.04 of
-IO::HTML, released February 4, 2012.
+This document describes version 1.00 of
+IO::HTML, released February 23, 2013.
 
 =head1 SYNOPSIS
 
@@ -400,6 +400,10 @@ C<undef> if the encoding cannot be determined.  C<$bom> is true if the
 file began with a byte order mark.  In scalar context, it returns only
 C<$encoding>.
 
+The filehandle's position is restored to its original position
+(normally the beginning of the file) unless C<$bom> is true.  In that
+case, the position is immediately after the BOM.
+
 Tip: If you want to run C<sniff_encoding> on a file you've already
 loaded into a string, open an in-memory file on the string, and pass
 that handle:
@@ -408,7 +412,7 @@ that handle:
     open(my $fh, '<', \$string);  sniff_encoding($fh)
   };
 
-(This only makes sense if C<utf8::is_utf8($string)> is false.)
+(This only makes sense if C<$string> contains bytes, not characters.)
 
 
 =head2 find_charset_in
@@ -540,7 +544,7 @@ L<< http://github.com/madsen/io-html >>.
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2013 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
